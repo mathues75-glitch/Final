@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gaming Palace | Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">The Gaming Palace</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+            <a href="#">Shop ▼</a>
+            <div class="dropdown-content">
+                <a href="consoles.html">Consoles</a>
+                <a href="videogames.html">Video Games</a>
+                <a href="accessories.html">Accessories</a>
+            </div>
+        </div>
+
+        <a href="tradein.html">Trade-In</a>
+        <a href="profile.html">Profile</a>
+
+        <a href="cart.html">
+            Cart 🛒 <span id="cartCount">0</span>
+        </a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <h1>Welcome to The Gaming Palace</h1>
+        <p>Buy, trade, and upgrade your gaming setup</p>
+        <a href="consoles.html" class="hero-btn">Shop Now</a>
+    </section>
+
+    <section class="home-grid">
+
+        <div class="shop-box">
+            <img src="images/consoles.jpg" alt="Gaming consoles">
+            <h3>Consoles</h3>
+            <p>PS5 • Nintendo Switch • Xbox</p>
+            <a href="consoles.html"><button>View</button></a>
+        </div>
+
+        <div class="shop-box">
+            <img src="images/games.jpg" alt="Video games">
+            <h3>Video Games</h3>
+            <p>Exclusive Titles</p>
+            <a href="videogames.html"><button>View</button></a>
+        </div>
+
+        <div class="shop-box">
+            <img src="images/accessories.jpg" alt="Gaming accessories">
+            <h3>Accessories</h3>
+            <p>Controllers & Gear</p>
+            <a href="accessories.html"><button>View</button></a>
+        </div>
+
+        <div class="shop-box">
+            <img src="images/tradein.jpg" alt="Trade in gaming items">
+            <h3>Trade-In</h3>
+            <p>Get Store Credit</p>
+            <a href="tradein.html"><button>Trade</button></a>
+        </div>
+
+    </section>
+
+</main>
+
+<script>
+window.addEventListener("load", () => {
+    updateCartCount();
+    checkAutoLogin();
+    updateNavUser();
+});
+</script>
+
+</body>
+</html>

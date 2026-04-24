@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gaming Palace | Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">The Gaming Palace</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+            <a href="#">Shop ▼</a>
+            <div class="dropdown-content">
+                <a href="consoles.html">Consoles</a>
+                <a href="videogames.html">Video Games</a>
+                <a href="accessories.html">Accessories</a>
+            </div>
+        </div>
+
+        <a href="tradein.html">Trade-In</a>
+        <a href="profile.html">Profile</a>
+
+        <a href="cart.html">
+            Cart 🛒 <span id="cartCount">0</span>
+        </a>
+    </nav>
+</header>
+
+<main>
+
+    <h1>Login</h1>
+
+    <!-- LOGIN -->
+    <section class="shop-box">
+
+        <h2>Login to Your Account</h2>
+
+        <input id="loginEmail" type="email" placeholder="Email">
+        <input id="loginPassword" type="password" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+
+    </section>
+
+    <hr>
+
+    <!-- SIGNUP -->
+    <section class="shop-box">
+
+        <h2>Create Account</h2>
+
+        <input id="username" type="text" placeholder="Username">
+        <input id="email" type="email" placeholder="Email">
+        <input id="password" type="password" placeholder="Password">
+
+        <button onclick="signup()">Create Account</button>
+
+    </section>
+
+</main>
+
+<script src="script.js"></script>
+
+<script>
+window.addEventListener("load", () => {
+    updateCartCount();
+    checkAutoLogin();
+    updateNavUser();
+});
+</script>
+
+</body>
+</html>

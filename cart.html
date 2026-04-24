@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="loadCart()">
+
+<header>
+    <div class="logo">The Gaming Palace</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+            <a href="#">Shop ▼</a>
+            <div class="dropdown-content">
+                <a href="consoles.html">Consoles</a>
+                <a href="videogames.html">Video Games</a>
+                <a href="accessories.html">Accessories</a>
+            </div>
+        </div>
+
+        <a href="tradein.html">Trade-In</a>
+        <a href="profile.html">Profile</a>
+
+        <a href="cart.html">
+            Cart 🛒 <span id="cartCount">0</span>
+        </a>
+    </nav>
+</header>
+
+<main>
+
+<h1>Your Cart</h1>
+
+<div id="cartItems"></div>
+
+<div class="checkout-wrapper">
+    <div id="checkoutBox" class="shop-box">
+
+        <h3>Checkout</h3>
+
+        <p id="cartTotal"></p>
+        <p id="creditAvailable"></p>
+        <p id="remainingBalance"></p>
+
+        <label>
+            <input type="checkbox" id="useCreditToggle" checked>
+            Use Store Credit
+        </label>
+
+        <br><br>
+
+        <button onclick="checkout()">Checkout</button>
+
+    </div>
+</div>
+
+</main>
+
+<script src="script.js"></script>
+
+<script>
+window.addEventListener("load", () => {
+    loadCart();
+    updateCartCount();
+    checkAutoLogin();
+});
+</script>
+
+</body>
+</html>

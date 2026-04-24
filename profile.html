@@ -1,0 +1,142 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>The Gaming Palace | Profile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">The Gaming Palace</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+            <a href="#">Shop ▼</a>
+            <div class="dropdown-content">
+                <a href="consoles.html">Consoles</a>
+                <a href="videogames.html">Video Games</a>
+                <a href="accessories.html">Accessories</a>
+            </div>
+        </div>
+
+        <a href="tradein.html">Trade-In</a>
+
+        <a href="profile.html" id="navUser">Profile</a>
+
+        <a href="cart.html">
+            Cart 🛒 <span id="cartCount">0</span>
+        </a>
+    </nav>
+</header>
+
+<main>
+
+<h1>Profile</h1>
+
+<!-- LOGIN SECTION -->
+<section id="loginBox">
+    <div class="shop-box">
+
+        <h2>Login</h2>
+
+        <input id="loginEmail" type="email" placeholder="Email">
+        <input id="loginPassword" type="password" placeholder="Password">
+
+        <button onclick="login()">Login</button>
+
+        <hr>
+
+        <h3>Create Account</h3>
+
+        <input id="username" type="text" placeholder="Username">
+        <input id="email" type="email" placeholder="Email">
+        <input id="password" type="password" placeholder="Password">
+
+        <button onclick="signup()">Create Account</button>
+
+    </div>
+</section>
+
+<!-- PROFILE DASHBOARD -->
+<section id="profileBox" style="display:none;">
+
+    <div class="profile-grid">
+
+        <!-- LEFT PANEL -->
+        <div class="shop-box">
+
+            <img id="profilePic"
+                 src="default.png"
+                 alt="Profile Picture"
+                 style="width:120px;height:120px;border-radius:50%;object-fit:cover;">
+
+            <input type="file" onchange="uploadPic(event)">
+
+            <hr>
+
+            <h2 id="welcome"></h2>
+            <p id="emailDisplay"></p>
+
+            <hr>
+
+            <h3>Edit Profile</h3>
+
+            <input id="newUsername" type="text" placeholder="New Username">
+            <input id="newEmail" type="email" placeholder="New Email">
+
+            <button onclick="updateProfile()">Update Profile</button>
+
+            <hr>
+
+            <button onclick="logout()">Logout</button>
+
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div>
+
+            <!-- STATS -->
+            <div class="shop-box">
+                <h3>Account Stats</h3>
+
+                <p id="totalSpent"></p>
+                <p id="itemsBought"></p>
+                <p id="storeCredit"></p>
+                <p id="userPoints"></p>
+
+                <button onclick="convertPointsToCredit()">
+                    Convert Points → Credit
+                </button>
+            </div>
+
+            <!-- LAST ORDER -->
+            <div class="shop-box">
+                <h3>Last Order</h3>
+                <div id="lastOrderBox"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+</main>
+
+<script src="script.js"></script>
+
+<script>
+window.addEventListener("load", () => {
+    initProfilePage();
+    updateCartCount();
+    checkAutoLogin();
+    updateNavUser();
+});
+</script>
+
+</body>
+</html>

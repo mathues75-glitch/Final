@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gaming Palace | Consoles</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">The Gaming Palace</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+            <a href="#">Shop ▼</a>
+            <div class="dropdown-content">
+                <a href="consoles.html">Consoles</a>
+                <a href="videogames.html">Video Games</a>
+                <a href="accessories.html">Accessories</a>
+            </div>
+        </div>
+
+        <a href="tradein.html">Trade-In</a>
+        <a href="profile.html">Profile</a>
+
+        <a href="cart.html">
+            Cart 🛒 <span id="cartCount">0</span>
+        </a>
+    </nav>
+</header>
+
+<main>
+    <h1>Consoles</h1>
+
+    <div class="shop-box-container">
+
+        <div class="shop-box">
+            <img src="images/switch.jpg" alt="Nintendo Switch">
+            <h3>Nintendo Switch</h3>
+            <p>$299</p>
+            <button onclick="addToCart('Nintendo Switch', 299, 'images/switch.jpg')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="shop-box">
+            <img src="images/switch2.jpg" alt="Nintendo Switch 2">
+            <h3>Nintendo Switch 2</h3>
+            <p>$399</p>
+            <button onclick="addToCart('Nintendo Switch 2', 399, 'images/switch2.jpg')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="shop-box">
+            <img src="images/ps5.jpg" alt="PlayStation 5">
+            <h3>PlayStation 5</h3>
+            <p>$499</p>
+            <button onclick="addToCart('PlayStation 5', 499, 'images/ps5.jpg')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="shop-box">
+            <img src="images/ps5pro.jpg" alt="PlayStation 5 Pro">
+            <h3>PlayStation 5 Pro</h3>
+            <p>$699</p>
+            <button onclick="addToCart('PlayStation 5 Pro', 699, 'images/ps5pro.jpg')">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="shop-box">
+            <img src="images/xbox.jpg" alt="Xbox Series X">
+            <h3>Xbox Series X</h3>
+            <p>$499</p>
+            <button onclick="addToCart('Xbox Series X', 499, 'images/xbox.jpg')">
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+</main>
+
+<div id="toast">Added to cart</div>
+
+<script src="script.js"></script>
+<script>
+window.addEventListener("load", () => {
+    updateCartCount();
+    checkAutoLogin();
+    updateNavUser();
+});
+</script>
+
+</body>
+</html>

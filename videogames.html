@@ -1,0 +1,290 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gaming Palace | Video Games</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">The Gaming Palace</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+            <a href="#">Shop ▼</a>
+            <div class="dropdown-content">
+                <a href="consoles.html">Consoles</a>
+                <a href="videogames.html">Video Games</a>
+                <a href="accessories.html">Accessories</a>
+            </div>
+        </div>
+
+        <a href="tradein.html">Trade-In</a>
+        <a href="profile.html">Profile</a>
+
+        <a href="cart.html">
+            Cart 🛒 <span id="cartCount">0</span>
+        </a>
+    </nav>
+</header>
+
+<main>
+    <h1>Video Games</h1>
+
+    <!-- Nintendo -->
+    <section class="game-section">
+        <h2>Nintendo Exclusives</h2>
+
+        <div class="shop-box-container">
+
+            <div class="shop-box">
+                <img src="images/mario-kart-8-deluxe.jpg" alt="Mario Kart 8 Deluxe">
+                <h3>Mario Kart 8 Deluxe</h3>
+                <p>$59</p>
+                <button onclick="addToCart('Mario Kart 8 Deluxe', 59, 'mario-kart-8-deluxe.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/super-mario-odyssey.jpg" alt="Super Mario Odyssey">
+                <h3>Super Mario Odyssey</h3>
+                <p>$59</p>
+                <button onclick="addToCart('Super Mario Odyssey', 59, 'super-mario-odyssey.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/zelda-breath-of-the-wild.jpg" alt="The Legend of Zelda: Breath of the Wild">
+                <h3>The Legend of Zelda: Breath of the Wild</h3>
+                <p>$59</p>
+                <button onclick="addToCart('Breath of the Wild', 59, 'zelda-breath-of-the-wild.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/animal-crossing-new-horizons.jpg" alt="Animal Crossing: New Horizons">
+                <h3>Animal Crossing: New Horizons</h3>
+                <p>$59</p>
+                <button onclick="addToCart('Animal Crossing', 59, 'animal-crossing-new-horizons.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/super-smash-bros-ultimate.jpg" alt="Super Smash Bros. Ultimate">
+                <h3>Super Smash Bros. Ultimate</h3>
+                <p>$59</p>
+                <button onclick="addToCart('Smash Ultimate', 59, 'super-smash-bros-ultimate.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/pokemon-scarlet.jpg" alt="Pokémon Scarlet">
+                <h3>Pokémon Scarlet</h3>
+                <p>$59</p>
+                <button onclick="addToCart('Pokemon Scarlet', 59, 'pokemon-scarlet.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/pokemon-violet.jpg" alt="Pokémon Violet">
+                <h3>Pokémon Violet</h3>
+                <p>$59</p>
+                <button onclick="addToCart('Pokemon Violet', 59, 'pokemon-violet.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/metroid-dread.jpg" alt="Metroid Dread">
+                <h3>Metroid Dread</h3>
+                <p>$59</p>
+                <button onclick="addToCart('Metroid Dread', 59, 'metroid-dread.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/splatoon-3.jpg" alt="Splatoon 3">
+                <h3>Splatoon 3</h3>
+                <p>$59</p>
+                <button onclick="addToCart('Splatoon 3', 59, 'splatoon-3.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/kirby-forgotten-land.jpg" alt="Kirby and the Forgotten Land">
+                <h3>Kirby and the Forgotten Land</h3>
+                <p>$59</p>
+                <button onclick="addToCart('Kirby Forgotten Land', 59, 'kirby-forgotten-land.jpg')">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PlayStation -->
+    <section class="game-section">
+        <h2>PlayStation 5 Exclusives</h2>
+
+        <div class="shop-box-container">
+
+            <div class="shop-box">
+                <img src="images/spider-man-2.jpg" alt="Marvel’s Spider-Man 2">
+                <h3>Marvel’s Spider-Man 2</h3>
+                <p>$69</p>
+                <button onclick="addToCart('Spider-Man 2', 69, 'spider-man-2.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/god-of-war-ragnarok.jpg" alt="God of War Ragnarök">
+                <h3>God of War Ragnarök</h3>
+                <p>$69</p>
+                <button onclick="addToCart('God of War Ragnarok', 69, 'god-of-war-ragnarok.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/horizon-forbidden-west.jpg" alt="Horizon Forbidden West">
+                <h3>Horizon Forbidden West</h3>
+                <p>$69</p>
+                <button onclick="addToCart('Horizon Forbidden West', 69, 'horizon-forbidden-west.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/returnal.jpg" alt="Returnal">
+                <h3>Returnal</h3>
+                <p>$69</p>
+                <button onclick="addToCart('Returnal', 69, 'returnal.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/ratchet-and-clank-rift-apart.jpg" alt="Ratchet & Clank: Rift Apart">
+                <h3>Ratchet & Clank: Rift Apart</h3>
+                <p>$69</p>
+                <button onclick="addToCart('Ratchet and Clank Rift Apart', 69, 'ratchet-and-clank-rift-apart.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/demons-souls.jpg" alt="Demon’s Souls">
+                <h3>Demon’s Souls</h3>
+                <p>$69</p>
+                <button onclick="addToCart('Demons Souls', 69, 'demons-souls.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/stellar-blade.jpg" alt="Stellar Blade">
+                <h3>Stellar Blade</h3>
+                <p>$69</p>
+                <button onclick="addToCart('Stellar Blade', 69, 'stellar-blade.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/death-stranding-directors-cut.jpg" alt="Death Stranding Director’s Cut">
+                <h3>Death Stranding Director’s Cut</h3>
+                <p>$69</p>
+                <button onclick="addToCart('Death Stranding Directors Cut', 69, 'death-stranding-directors-cut.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/gran-turismo-7.jpg" alt="Gran Turismo 7">
+                <h3>Gran Turismo 7</h3>
+                <p>$69</p>
+                <button onclick="addToCart('Gran Turismo 7', 69, 'gran-turismo-7.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/the-last-of-us-part-1.jpg" alt="The Last of Us Part I">
+                <h3>The Last of Us Part I</h3>
+                <p>$69</p>
+                <button onclick="addToCart('The Last of Us Part 1', 69, 'the-last-of-us-part-1.jpg')">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Xbox -->
+    <section class="game-section">
+        <h2>Xbox Series X Exclusives</h2>
+
+        <div class="shop-box-container">
+
+            <div class="shop-box">
+                <img src="images/forza-horizon-5.jpg" alt="Forza Horizon 5">
+                <h3>Forza Horizon 5</h3>
+                <p>$69</p>
+                <button onclick="addToCart('Forza Horizon 5', 69, 'forza-horizon-5.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/halo-infinite.jpg" alt="Halo Infinite">
+                <h3>Halo Infinite</h3>
+                <p>$69</p>
+                <button onclick="addToCart('Halo Infinite', 69, 'halo-infinite.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/starfield.jpg" alt="Starfield">
+                <h3>Starfield</h3>
+                <p>$69</p>
+                <button onclick="addToCart('Starfield', 69, 'starfield.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/gears-5.jpg" alt="Gears 5">
+                <h3>Gears 5</h3>
+                <p>$69</p>
+                <button onclick="addToCart('Gears 5', 69, 'gears-5.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/hellblade-2.jpg" alt="Senua’s Saga: Hellblade II">
+                <h3>Senua’s Saga: Hellblade II</h3>
+                <p>$69</p>
+                <button onclick="addToCart('Hellblade 2', 69, 'hellblade-2.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/pentiment.jpg" alt="Pentiment">
+                <h3>Pentiment</h3>
+                <p>$39</p>
+                <button onclick="addToCart('Pentiment', 39, 'pentiment.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/outer-worlds-2.jpg" alt="The Outer Worlds 2">
+                <h3>The Outer Worlds 2</h3>
+                <p>$69</p>
+                <button onclick="addToCart('Outer Worlds 2', 69, 'outer-worlds-2.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/microsoft-flight-simulator-2024.jpg" alt="Microsoft Flight Simulator 2024">
+                <h3>Microsoft Flight Simulator 2024</h3>
+                <p>$69</p>
+                <button onclick="addToCart('Flight Simulator 2024', 69, 'microsoft-flight-simulator-2024.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/state-of-decay-3.jpg" alt="State of Decay 3">
+                <h3>State of Decay 3</h3>
+                <p>$69</p>
+                <button onclick="addToCart('State of Decay 3', 69, 'state-of-decay-3.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/avowed.jpg" alt="Avowed">
+                <h3>Avowed</h3>
+                <p>$69</p>
+                <button onclick="addToCart('Avowed', 69, 'avowed.jpg')">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<div id="toast">Added to cart</div>
+
+<script src="script.js"></script>
+<script>
+window.addEventListener("load", () => {
+    updateCartCount();
+    checkAutoLogin();
+    updateNavUser();
+});
+</script>
+
+</body>
+</html>

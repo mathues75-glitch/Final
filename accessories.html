@@ -1,0 +1,185 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gaming Palace | Accessories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <div class="logo">The Gaming Palace</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+
+        <div class="dropdown">
+            <a href="#">Shop ▼</a>
+            <div class="dropdown-content">
+                <a href="consoles.html">Consoles</a>
+                <a href="videogames.html">Video Games</a>
+                <a href="accessories.html">Accessories</a>
+            </div>
+        </div>
+
+        <a href="tradein.html">Trade-In</a>
+        <a href="profile.html">Profile</a>
+
+        <a href="cart.html">
+            Cart 🛒 <span id="cartCount">0</span>
+        </a>
+    </nav>
+</header>
+
+<main>
+    <h1>Accessories</h1>
+
+    <!-- Switch -->
+    <section class="game-section">
+        <h2>Nintendo Switch Accessories</h2>
+
+        <div class="shop-box-container">
+
+            <div class="shop-box">
+                <img src="images/switch-pro-controller.jpg" alt="Switch Pro Controller">
+                <h3>Switch Pro Controller</h3>
+                <p>$69</p>
+                <button onclick="addToCart('Switch Pro Controller', 69, 'switch-pro-controller.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/joycons.jpg" alt="Joy-Con Controllers">
+                <h3>Joy-Con Controllers</h3>
+                <p>$79</p>
+                <button onclick="addToCart('Joy-Cons', 79, 'joycons.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/switch-dock.jpg" alt="Nintendo Switch Dock">
+                <h3>Switch Dock</h3>
+                <p>$89</p>
+                <button onclick="addToCart('Switch Dock', 89, 'switch-dock.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/switch-case.jpg" alt="Switch Carrying Case">
+                <h3>Carrying Case</h3>
+                <p>$25</p>
+                <button onclick="addToCart('Switch Case', 25, 'switch-case.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/switch-screen-protector.jpg" alt="Switch Screen Protector">
+                <h3>Screen Protector</h3>
+                <p>$10</p>
+                <button onclick="addToCart('Switch Screen Protector', 10, 'switch-screen-protector.jpg')">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- PlayStation -->
+    <section class="game-section">
+        <h2>PlayStation 5 Accessories</h2>
+
+        <div class="shop-box-container">
+
+            <div class="shop-box">
+                <img src="images/dualsense.jpg" alt="DualSense Controller">
+                <h3>DualSense Controller</h3>
+                <p>$69</p>
+                <button onclick="addToCart('DualSense Controller', 69, 'dualsense.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/ps5-headset.jpg" alt="PS5 Pulse 3D Headset">
+                <h3>Pulse 3D Headset</h3>
+                <p>$99</p>
+                <button onclick="addToCart('PS5 Headset', 99, 'ps5-headset.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/ps5-charging-station.jpg" alt="PS5 Charging Dock">
+                <h3>Controller Charging Dock</h3>
+                <p>$29</p>
+                <button onclick="addToCart('PS5 Charging Dock', 29, 'ps5-charging-station.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/ps5-media-remote.jpg" alt="PS5 Media Remote">
+                <h3>Media Remote</h3>
+                <p>$29</p>
+                <button onclick="addToCart('PS5 Media Remote', 29, 'ps5-media-remote.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/ps5-cover.jpg" alt="PS5 Console Covers">
+                <h3>Console Covers</h3>
+                <p>$49</p>
+                <button onclick="addToCart('PS5 Covers', 49, 'ps5-cover.jpg')">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Xbox -->
+    <section class="game-section">
+        <h2>Xbox Series X Accessories</h2>
+
+        <div class="shop-box-container">
+
+            <div class="shop-box">
+                <img src="images/xbox-controller.jpg" alt="Xbox Wireless Controller">
+                <h3>Xbox Wireless Controller</h3>
+                <p>$59</p>
+                <button onclick="addToCart('Xbox Controller', 59, 'xbox-controller.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/xbox-headset.jpg" alt="Xbox Wireless Headset">
+                <h3>Xbox Wireless Headset</h3>
+                <p>$99</p>
+                <button onclick="addToCart('Xbox Headset', 99, 'xbox-headset.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/xbox-charge-kit.jpg" alt="Xbox Play and Charge Kit">
+                <h3>Play & Charge Kit</h3>
+                <p>$24</p>
+                <button onclick="addToCart('Xbox Charge Kit', 24, 'xbox-charge-kit.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/xbox-storage.jpg" alt="Xbox Expansion Storage Card">
+                <h3>Expansion Storage Card</h3>
+                <p>$149</p>
+                <button onclick="addToCart('Xbox Storage Card', 149, 'xbox-storage.jpg')">Add to Cart</button>
+            </div>
+
+            <div class="shop-box">
+                <img src="images/xbox-elite-controller.jpg" alt="Xbox Elite Series 2 Controller">
+                <h3>Elite Series 2 Controller</h3>
+                <p>$179</p>
+                <button onclick="addToCart('Xbox Elite Controller', 179, 'xbox-elite-controller.jpg')">Add to Cart</button>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<div id="toast"></div>
+
+<script src="script.js"></script>
+<script>
+window.addEventListener("load", () => {
+    updateCartCount();
+    checkAutoLogin();
+    updateNavUser();
+});
+</script>
+
+</body>
+</html>
